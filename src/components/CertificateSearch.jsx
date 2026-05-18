@@ -181,6 +181,7 @@ const CertificateSearch = () => {
           </label>
           <input
             type="text"
+            
             value={query}
             onChange={e => { setQuery(e.target.value); setFound(null); }}
             onKeyDown={e => { if (e.key === 'Enter') searchCertificate(); }}
